@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shogo's Notes'</title>
+    <link rel="stylesheet" href="reflection_validated.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1 class="top">Key points</h1><br>
+    <div class="contents">   <!-- A box for contents-->
+    <div>   <!--A box for lesson1.1-->
+      <h2 class="lesson"><u>1.1 The Basics of the Web and HTML</u><br>"Computers are stupid because <br>they cannot interpret mistakes"</h2>
+
+        <h3><u>Basic definitions</u></h3>
+      <p><em> Web</em>...The way computers communicate by using <b>http</b> protocol.
+      <br><em> http</em>..."Hypertext Transfer Protocol" The protocol used to transmission and reception of <b>HTML</b> files between Web browser and Web server. 
+      <br><em> HTML</em>..."Hyper Text Markup Language" A language that is used for constract the web page.
+      </p>
+
+      <h3><u>How HTML works</u></h3>
+      <p>HTML documents use "tags" to what to show on the browser.
+        <br>There are two types of <b>ELEMENTS</b> described by "tags".
+
+        <div>
+          <!--box for block elements-->
+        
+      <h4>Type1:BLOCK elements</h4>
+      Block elements normally start and end with a new line which means the browser will display line breaks before and after the block element. They can be described as below.
+        <div class="eq"><!--The explanation of the tags-->
+      &lt;OPENING TAG>
+      <br>
+      &nbsp;&nbsp;&nbsp;&lt;CONTENTS>
+      <br>&lt;/CLOSING TAG>
+      </div><!--The end of tags-->
+      Opening tags and Closing tags have exactly the same name except closing tags have "/"at the beginning of the tags.
+      <br>Examples of block elements are described as follows.
+      <div class="eq"><!--div and h1-->
+      &lt;div>
+      <br>
+      &nbsp;&nbsp;&nbsp;&lt;CONTENTS>
+      <br>&lt;/div>
+      <br>
+      &lt;h1>
+      <br>
+      &nbsp;&nbsp;&nbsp;&lt;HEADLINE>
+      <br>&lt;/h1>
+      </div><!--END of div and h1-->
+         
+      </div>
+        <!--End of a box for block elements-->
+      <div>
+        <!--a box for INLINE elements-->
+
+      <h4>Type2:INLINE elements</h4>
+      The <b>INLINE elements</b> are normally displayed without line breaks. They can be described as follows.
+      <div class="eq"><!--box for INLINE elements-->
+              &lt;TAG>&lt;contents>
+                <br>&lt;OPENING TAG>&lt;contents>&lt;/CLOSING TAG>
+        </div><!--END of a box for Inline elements-->
+        Examples of inline elements are described as follows.
+
+      <div class="eq"><!--a box for examples of inline elements-->
+      &lt;br>:Begin a new line
+      <br>
+      &lt;b>content&lt;/b>:<b>Make contents bolded</b>
+      <br>&lt;em>content&lt;/em>:<em>Make contents Italic</em>
+      </div>
+      <!--END of a box for examples of inline elements-->
+      </div>
+        <!--END of a box for INLINE elements-->
+
+      <div>
+        <!--a box for ATTRIBUTES-->
+
+      <h4>HTML attributes</h4>
+      Some of the tags involves <b>HTML attributes</b> in their tags.
+      <br>In case of block elements, HTML attributes looks like this.
+
+      <div class="eq">
+        <!--a box for BLOCK ATTRIBUTES-->
+      &lt;TAG ATTR="value">conetnts&lt;/TAGS>
+      </div>
+        <!--END of a box for BLOCK ATTRIBUTES-->
+
+      For inline elements, HTML attributes looks like this.
+
+      <div class="eq">
+        <!--a box for LINE ATTRIBUTES-->
+      &lt;TAG ATTR="value">
+      </div>
+        <!--END of a box for LINE ATTRIBUTES-->
+
+      Example of the HTML attributes are follows.
+
+      <div class="eq">
+        <!--a box for EXAMPLE of ATTRIBUTES-->
+      &lt;a href="www.udacity.com">Udacity&lt;/a>:Create hyperlinks as <a href="http://www.udacity.com">Udacity</a>
+      <br>&lt;img src="url of the image" alt"text">:Display the linked image.
+      </div>
+        <!--END of a box for EXAMPLE of ATTRIBUTES-->
+      </div>
+        <!--a box for ATTRIBUTES-->
+
+      </div>   <!--A box for lesson1.1-->
+    <br>
+    <div><!--a box for 1.2-->
+        <h2 class="lesson"><u>1.2 Creating a Structured Document</u><br>"HTML is about boxes"</h2>
+        <h3><u>Analogy between programming languages on the web and a house</u></h3>
+        HTML...It is the structure, like where is the bedroom, kitchen, etc.
+        <br>CSS...It is the decoration, like colour of the wall.
+        <br>Javascript...It is the interactive component, like television remote.
+
+        <div><!--a box for structure of the web page-->
+        <h3><u>Structure of the web page</u></h3>
+        <div><!--a box for the rectangular-->
+          <h4>A web site is a cluster of rectangular boxes</h4>
+           Everything on the web page is a box. For example, the block elements construct boxes between them and all the boxes are rectangular. Also, this can be applied for circular shaped component on the web. They look circular, but that is because CSS created stryles in the boxes. 
+    　　　</div><!--END of a box for the rectangular-->
+    <div><!--a box for the tree structure-->
+        <h4>The boxes are dangling from a box.</h4>
+          The boxes of the elements are dangling from a box. For instance, BOX2 and BOX3 are dangling from a BOX1 as shown in the diagram below. This kind of structure is called <b>tree-like structure</b>. It can be deeper as the web site gets complicated. <br>All the HTML web sites follow this rule of tree-like structure. This rule is named <b>DOM</b>(Document Object Model).
+            <div class="image">
+            <img src="boxes.png" alt="danglingboxes" class="image">
+            </div>
+
+
+    </div><!--END of a box for the tree structure-->
+    </div><!--END of a box for structure of the web page-->
+
+    </div><!--END of a box for 1.2-->
+    <br>
+    <div><!--a box for 1.3-->
+      <h2 class="lesson"><u>1.3 Adding CSS style and HTML structure</u><br><em>"Avoid repetition is essential in all areas of programming"</em></h2>
+      　<h3><u>What does CSS do?Why do we need it?</u></h3>
+      CSS stands for Cascading Style Sheets.CSS include style properties for HTML elements. The each styles have <b>class</b> name. By giving the class name to HTML elements, the elements can refer the style.
+      <br>CSS is important since it can avoid repetition. Using class can avoid describing same properties again and again. Avoiding repetition is not just easier for us to write HTML but also it can avoid errors. If you did not avoid repetition and repeat same code many times, once you see the error in the code you must change all of the code. However, if you use CSS to avoid repetition, you only need to change once.
+
+      <h3><u>How to add CSS style</u></h3>
+        There are three ways to include CSS in HTML. All of the method must include following code before using CSS.
+      <div class="eq">
+          <!--a box for CSS intro-->
+        &lt;!DOCTYPE&nbsp;html><br>&nbsp;&nbsp;&nbsp;&lt;html><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body>
+        <br>&nbsp;&nbsp;&nbsp;&lt;/html>
+        </div>
+      Between <b>&lt;html></b> and <b>&lt;/html></b> is the area where HTML code written.
+      <br>
+      Between <b>&lt;head></b> and <b>&lt;/head></b> is the area where information like CSS can be included as explain later.
+
+        <h4>1. Write CSS in &lt;head> of the HTML</h4>
+        <div class="eq">
+          <!--a box CSS1.-->
+        &lt;head><br>&nbsp;&nbsp;&nbsp;&lt;style><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{
+        </div>
+        <h4>2. Link your HTML to a separate CSS file</h4>
+        <div class="eq">
+          <!--a box for CSS2.-->
+        &lt;head><br>&nbsp;&nbsp;&nbsp;&lt;link&nbsp;rel="stylesheet"&nbsp;href="main.css">
+        </div>
+        <h4>3.Write your style inline with your HTML</h4>
+        <div class="eq">
+          <!--a box for CSS3.-->
+        &lt;body><br>&nbsp;&nbsp;&nbsp;&lt;div&nbsp;style="background-color:red;">
+        </div>
+      <h3><u>The structure of the CSS style sheet</u></h3>
+      To add a "style" write
+      <div class="eq">
+          <!--a box for adding style-->
+        .selector{
+        <br>
+        &nbsp;&nbsp;&nbsp;attribute:value;<br>
+      }
+        </div>
+       For "selector", write the title of the style you will describe.
+       <br>
+       For "attribute", write the property of the style, such as background-color, border-style, etc.
+       <br>
+       For "value", write the values for given attribute. For example, if the attribute is about color, write "red".
+       <br>
+       On CSS, "attribute:value;" is collectively called "declaration".
+      <h3><u>How to apply CSS to HTML</u></h3>
+      Once you declared your selector, you can apply it to HTML by using <b>class</b>. The example is given below.
+      <div class="eq">
+          <!--a box for adding style-->
+       &lt;div class="selector">
+       <br>&lt;/div>
+        </div>
+      <br>
+      </div><!--a box for 1.3-->
+  </div><!-- END of A box for contents-->
+  </body>
+</html>

@@ -1,0 +1,39 @@
+
+.eq{
+		background-color:rgba(242,226,206, 1);
+	border-color:rgb(182,119,135);
+	border-style:solid;
+	margin:0 auto;
+	text-align: left;
+	vertical-align: middle;
+	max-width: 600px;
+}
+.image{
+	margin:0 auto;
+	text-align: center;
+	vertical-align: middle;
+	width: 436px;
+	height:358px;
+}
+.lesson{
+	background-color:rgb(44, 181, 205);
+	margin:0 auto;
+	text-align: center;
+	vertical-align: middle;
+	max-width: 800px;
+
+}
+.contents{
+	background-color:rgb(227, 245, 245);
+	margin:0 auto;
+	text-align: left;
+	vertical-align: middle;
+	max-width: 800px;
+
+}
+.top{
+		margin:0 auto;
+	text-align: left;
+	vertical-align: top;
+	max-width: 800px;
+}
